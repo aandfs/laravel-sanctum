@@ -14,6 +14,7 @@ class QuoteResource extends JsonResource
      */
     public function toArray($request)
     {
+        //wrapping response
         return [
             'id' => $this->id,
             'quote' => $this->text,
